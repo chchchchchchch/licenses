@@ -1,6 +1,23 @@
-\documentclass[8pt,a4paper]{article}
+\documentclass[8pt,cleardoubleempty]{scrbook}
 
-\title{Creative Commons Attribution-ShareAlike 4.0 International}
+
+
+%\usepackage[showframe]{geometry}
+ \usepackage{geometry}
+ \geometry{paperwidth=154mm,paperheight=216mm}
+
+ \setlength\topmargin{-.08\paperheight}
+ \setlength\oddsidemargin{.03\paperwidth}
+ \setlength\evensidemargin{-.04\paperwidth}
+ \setlength\textheight{.76\paperheight}
+ \setlength\textwidth{.68\paperwidth}
+
+
+\newcommand{\ttstandard}{lin}
+\renewcommand*{\ttdefault}{\ttstandard}\selectfont
+
+\usepackage{seqsplit}
+\newcommand\urlsplit[1]{{\seqsplit{\tt #1}}}
 
 \usepackage{multicol}
 \usepackage{scalefnt}
@@ -16,31 +33,26 @@
 
 % PREVENT HYPHENATION FOR WORDS STARTING WITH UPPERCASE
   \uchyph=0
-% PREVENT HYPHENATION OVER PAGE BREAK
-% \brokenpenalty10000\relax
-% PREVENT PAGE BREAK WITHIN LISTS
-% \let\LONGENUM\longenum
-% \let\ENDLONGENUM\endlongenum
-% \renewenvironment{longenum}{\begin{samepage}\LONGENUM}
-%                           {\ENDLONGENUM\end{samepage}}
 
-\setlength\textheight{300mm}
-\setlength\textwidth{190mm}
-\setlength\topmargin{-28mm}
-\setlength\oddsidemargin{-16mm}
+%\setlength\textheight{300mm}
+%\setlength\textwidth{190mm}
+%\setlength\topmargin{-28mm}
+%\setlength\oddsidemargin{-16mm}
 %\setlength\itemsep{-20mm}
 \setdefaultleftmargin{0.5em}{0.5em}{}{}{}{}
 
 \pagestyle{empty}
 \parindent=0pt
 
-\renewcommand{\rmdefault}{phv}
-\newcommand\h[1]{\medskip{\scalefont{.91}#1}}
+\renewcommand{\rmdefault}{phk}
+%\newcommand\h[1]{\medskip{\scalefont{.91}#1}}
 
 
 \begin{document}
-\scalefont{.51}%
+...
+\newpage
 
+\scalefont{.53}%
 \begin{multicols}{3}[][.4\paperwidth]%
  {\scalefont{1.1}%
 
@@ -94,7 +106,7 @@ exhaustive, and do not form part of our licenses.
      material not subject to the license. This includes other CC-
      licensed material, or material used under an exception or
      limitation to copyright. More considerations for licensors:
-     \texttt{wiki.creativecommons.org/Considerations\_for\_licensors}
+     \urlsplit{wiki.creativecommons.org/Considerations\_for\_licensors}
 
      Considerations for the public: By using one of our public
      licenses, a licensor grants the public permission to use the
@@ -111,7 +123,7 @@ exhaustive, and do not form part of our licenses.
      Although not required by our licenses, you are encouraged to
      respect those requests where reasonable.
      More considerations for the public: 
-     \texttt{wiki.creativecommons.org/Considerations\_for\_licensees}
+     \urlsplit{wiki.creativecommons.org/Considerations\_for\_licensees}
 
    \end{quote}
 
@@ -211,6 +223,8 @@ conditions.
 
   \end{longenum}
 
+  \vfill
+
   % Section 2 -- Scope.
   \item Scope.
 
@@ -286,6 +300,8 @@ conditions.
           provided in Section 3(a)(1)(A)(i).
 
        \end{longenum}
+
+ \newpage
 
   \item Other rights.
 
@@ -566,7 +582,7 @@ public licenses.
 
 \smallskip
 
-Creative Commons may be contacted at creativecommons.org.
+Creative Commons may be contacted at \urlsplit{creativecommons.org}.
 
 \end{multicols}
 \end{document}
